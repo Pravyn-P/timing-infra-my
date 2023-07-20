@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "../../terraform-modules/vpc"
+    source = "../terraform-modules-my/vpc"
     vpc_cidr = var.vpc_cidr
     tags = var.tags
     azs = var.azs
