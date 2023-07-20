@@ -75,14 +75,25 @@ variable "rds_username" {
   default = "timingadmin"
 }
 
-variable "secret_name" {
-  default = "timing/rds/password-value"
-}
+# variable "secret_name" {
+#   default = "timing/rds/password-value"
+# }
 
 variable "instance_type" {
   default = "db.t4g.micro"
 }
 
+variable "rds_secret_arn" {
+  default = "arn:aws:secretsmanager:ap-south-1:617480992998:secret:timing/rds-password-secret-TrBM6W"
+}
+
+variable "ecs_cluster_name" {
+  default = "timing"
+}
+
+variable "ecs_log_group_name" {
+  default = "timing/ecs_cluster"
+}
 
 
 
