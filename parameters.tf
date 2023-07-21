@@ -39,3 +39,9 @@ resource "aws_ssm_parameter" "app_target_group_arns" {
     type = "StringList"
     value = join(" , ",module.app_alb.target_group_arns)
 }
+
+resource "aws_ssm_parameter" "rds_secret_arn" {
+    name = "/timing/rds/rds_secret_arn"
+    type = "String"
+    value = var.rds_secret_arn
+}

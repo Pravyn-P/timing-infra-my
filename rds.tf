@@ -10,6 +10,6 @@ module "rds" {
     db_subnet_group_name = local.db_subnet_group_name
     vpc_security_group_ids = [local.rds_security_group_id]
     #secret_name = var.secret_name
-    tags = var.tags  
     rds_secret_arn = var.rds_secret_arn
+    tags = var.tags 
 }
