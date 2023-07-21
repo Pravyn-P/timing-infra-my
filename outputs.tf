@@ -13,3 +13,19 @@ output "ecs_cluster_id" {
 output "app_alb_security_group_id" {
     value = local.app_alb_security_group_id
 }
+
+output "app_alb_arn" {
+    value = local.app_alb_arn
+}
+
+output "private_subnet_ids" {
+    value = local.private_subnet_ids
+}
+
+output "rds_endpoint" {
+    value = local.rds_endpoint
+}
+
+output "app_target_group_arns" {
+    value = module.app_alb.target_group_arns 
+}
