@@ -128,6 +128,17 @@ variable "app_alb_tags" {
   default = {}
 }
 
+variable "zone_name" {
+  default = "openlok.world"
+}
+
+variable "api_alb_record_name" {
+  default = "api"
+}
+
+variable "zone_id" {
+  default = "Z01657161AFXNM8MY536F"
+}
 
 
 # variable "public_subnet_cidr" {
